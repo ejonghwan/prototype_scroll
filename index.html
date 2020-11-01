@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scroll prototype</title>
+    <link rel="stylesheet" href="/day10_prototype_scroll/style.css">
+    <script>
+        window.onload = function() {
+            // 인스턴스 생성
+           new MyScroll({
+               boxs: 'section',
+               btns: 'ul>li',
+               speed: 500,
+               baseLine: -300
+           });
+        }
+        
+    </script>
+</head>
+<body>
+
+
+
+    <main>
+        <section class="on"></section>
+        <section>
+            <p>하하하</p>
+        </section>
+        <section></section>
+        <section></section>
+        
+    </main>
+
+    <ul>
+        <li class="on"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+
+
+
+    <script src="prototype.js"></script>
+</body>
+</html>
